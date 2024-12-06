@@ -13,7 +13,7 @@ function App() {
   const [remainingTime, setRemainingTime] = useState(0)
 
   useEffect(() => {
-    let timer
+    let timer: number 
     if (remainingTime > 0) {
       timer = setInterval(() => {
         setRemainingTime(prevTime => prevTime - 1)
@@ -103,8 +103,8 @@ let processArray=["Inactivo", "Cinta transpotadora 1", "Horneado","Cinta transpo
             </div>
           </div>
           <div className="nameContainer">
-          <p> Jordano Pernia, Automatización Industrial, seccion 1, 2024-3</p>
-        </div>
+              <p> Jordano Pernia, Automatización Industrial, seccion 1, 2024-3</p>
+           </div>
         </div>
         
       </div>
