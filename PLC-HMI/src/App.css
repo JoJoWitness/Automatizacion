@@ -1,0 +1,267 @@
+#root {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+h3, p, h2, h1{
+  margin: 0px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.mainContainer{
+  width: 90%;
+  height: 90%;
+  background-color: #242424;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.gridContainer{
+  width: 90%;
+  height: 90%;
+  border: 4px solid #F5F5F5;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputsAndTextContainer{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttomContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.buttonStart{
+  width: 50px;
+  height: 50px;
+  background-color: #5CAB7D;
+  border: 5px solid #5A9367;
+  border-radius: 50%;
+}
+
+.buttonStart:hover {
+  
+  border: 5px solid #5A9367;
+  outline: none;
+  transform: scale(1.1);
+}
+
+.buttonStart:active {
+  border: 5px solid #5A9367;
+  outline: none;
+  transform: scale(0.9);
+}
+.buttonStart:focus, .buttonStop:focus{
+  outline: none;
+}
+
+.buttonStop{
+  width: 50px;
+  height: 50px;
+  background-color: #E64C4C;
+  border: 5px solid #B31919;
+  border-radius: 50%;
+}
+
+.buttonStop:hover {
+  border: 5px solid #B31919;
+  outline: none;
+  transform: scale(1.1);
+}
+
+.buttonStop:active {
+  border: 5px solid #B31919;
+  outline: none;
+  transform: scale(0.9);
+}
+
+.textContainer{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+
+}
+
+.textContainer > h3{
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0px;
+}
+
+.textContainer > h3 > span{
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.processContainer{
+  height: 65%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.processLayout{
+  width: auto;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.conveyorBelt{
+  width: 400px;
+  height: 70px;
+  border: 4px solid #CCCCCC;
+  border-radius: 25px;
+  background-color: #525252 ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+}
+
+.ligth{
+  border: 4px solid #ADADAD;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.greenL{
+  background-color: #5CAB7D;
+}
+
+.redL{
+  background-color: #E64C4C;
+}
+
+.furnace{
+  width: 250px;
+  height: 150px;
+  border: 4px solid #CCCCCC;
+  border-radius: 25px;
+  background-color: #525252 ;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 5;
+}
+
+.bread{
+  width: 30px;
+  height: 20px;
+  border-radius: 15px 15px 5px 5px;
+  background-color: #D2B48C;
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  transition: transform 4s linear;
+}
+
+.move{
+  transform: translateX(400px);
+}
+
+.bread:not(.move), .breadBaked:not(.move)  {
+  transition: none;
+}
+
+.breadBaked{
+  width: 30px;
+  height: 20px;
+  border-radius: 15px 15px 5px 5px;
+  background-color: #BA8C4F;
+  position: absolute;
+  bottom: 70px;
+  left: 600px;
+  transition: transform 4s linear;
+}
+
+.nameContainer{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 50px;
+}
+
+.nameContainer >p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
